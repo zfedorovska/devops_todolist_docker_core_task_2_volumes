@@ -32,6 +32,9 @@ docker run -d \
   -e DB_HOST=<MYSQL_CONTAINER_IP> \
   zoryana/todoapp:2.0.0
 
+https://hub.docker.com/r/zoryana/mysql-local
+https://hub.docker.com/r/zoryana/todoapp
 http://localhost:8000
+
 
 
