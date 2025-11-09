@@ -70,7 +70,7 @@ DATABASES = {
         'USER': 'app_user',
         'PASSWORD': '1234',
         'HOST': DB_HOST,
-        'PORT': '3306',
+        'PORT': '',
     }
 
     # "default": {

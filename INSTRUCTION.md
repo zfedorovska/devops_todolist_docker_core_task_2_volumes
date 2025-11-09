@@ -1,13 +1,15 @@
 # Django Todolist – Docker Instructions
 
-This document describes how to run the **MySQL database container** and the **Django Todolist app container**, and how to access the application in a browser.
+This document explains how to run the **MySQL database container** and the **Django Todolist application container**, and how to access the application in your browser.
+
+---
 
 ## 1. Prerequisites
 
-- Docker installed and running
-- Access to Docker Hub
+- Docker installed and running  
+- Access to Docker Hub  
 
-Optional: you can either **build images locally** or **pull them from Docker Hub**.
+You can either **build the images locally** or **pull them directly from Docker Hub**.
 
 ### Pull images from Docker Hub (optional)
 
@@ -27,10 +29,9 @@ docker inspect -f "{{range.NetworkSettings.Networks}}{{.IPAddress}}{{end}}" mysq
 docker run -d \
   --name todoapp \
   -p 8000:8000 \
-  -e DB_HOST=172.17.0.3 \
+  -e DB_HOST=<MYSQL_CONTAINER_IP> \
   zoryana/todoapp:2.0.0
 
 http://localhost:8000
-
 
 
